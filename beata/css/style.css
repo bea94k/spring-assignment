@@ -15,6 +15,7 @@ html {
 
 body {
     height: 100%;
+    font-family: 'Montserrat';
 }
 
 img {
@@ -26,7 +27,26 @@ img {
 /* UTILITIES */
 
 .p {
-    padding: 2rem;
+    padding: 2rem 1rem;
+}
+
+.btn {
+    color: lightgrey;
+    background-color: darkcyan;
+    padding: 1rem;
+    margin: 1rem;
+    min-width: 150px;
+    border: 2px solid #007979;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #007979;
+}
+
+.btn:active {
+    background: #006363;
+    border: 2px solid #006363;
 }
 
 
@@ -144,12 +164,61 @@ main {
 }
 
 .skill-card {
-    display: block;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
     height: 150px;
     width: 150px;
     padding: 1rem;
-    background: rgb(252, 152, 113);
+    background: lightgrey;
 }
+
+/* flags */
+.skill-card img {
+    max-height: 30px;
+    max-width: 60px;
+}
+
+/* IT icons */
+.skill-card i {
+    font-size: 2.5rem;
+}
+
+.fa-html5 {
+    color: #e34f26;
+}
+
+.fa-css3-alt {
+    color: #2085c4;
+}
+
+.fa-js {
+    color: #dac41e;
+}
+
+
+.logo-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    width: 70%;
+}
+
+/* progress bars */
+.progress-bar-background {
+    background: #944d4d;
+    height: 90%;
+    width: 20px;
+    margin-right: 1rem;
+  }
+  
+  .progress-bar {
+    background: gray;
+    height: 15%; /* colors and percentage kinda in negative - if I want animation, i have to fix it better */
+    width: 20px;
+  }
 
 /* EDUCATION AND WORK EXPERIENCE */
 
@@ -177,7 +246,7 @@ main {
 /* CONTACT */
 
 .contact {
-    background: lightseagreen;
+    background: peachpuff;
 }
 
 .contact-content {
@@ -200,9 +269,10 @@ main {
 /* FOOTER */
 
 footer {
-    height: 5vh;
+    height: 3vh;
     width: 100vw;
     background-color: maroon;
+    font-size: 0.7rem;
     position: fixed;
     bottom: 0;
     display: flex;
