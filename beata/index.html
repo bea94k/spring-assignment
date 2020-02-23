@@ -14,13 +14,13 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Logo here</a></li>
-                <li><a href="#">Quick mail</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home"><img class="logo" src="images/logo-basic.png" alt="Bea the Dev logo"></a></li>
+                <li><a href="mailto:s2000167@edu.bc.fi">Quick mail</a></li>
+                <li><a href="#home">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
     </header>
@@ -29,7 +29,7 @@
         <div class="hide-scroll">
         <div class="scrolling-wrapper">
 
-            <div class="home p">
+            <div id="home" class="p">
                 <div class="slider">
                     <img class="profile" src="images/profile.jpg" alt="A photo of me smiling"> <!-- matching classes of picture and description to find it easier in the slider -->
                 </div>
@@ -46,7 +46,7 @@
                 </div>
             </div>
 
-            <div class="skills container p">
+            <div id="skills" class="container p">
                 <h2>Skills</h2>
                 <div class="skills-content">
                     <div class="ict">
@@ -125,7 +125,7 @@
                 </div>
             </div>
 
-            <div class="education container p">
+            <div id="education" class="container p">
                 <h2>Education</h2>
                 <div class="edu-exp-container">
                     <div class="edu-exp-card">High school</div>
@@ -134,7 +134,7 @@
                 </div>
             </div>
 
-            <div class="experience container p">
+            <div id="experience" class="container p">
                 <h2>Experience</h2>
                 <div class="edu-exp-container">
                     <div class="edu-exp-card">Lionbridge</div>
@@ -143,7 +143,7 @@
                 </div>
             </div>
 
-            <div class="contact container p">
+            <div id="contact" class="container p">
                 <h2>Contact</h2>
                 <div class="contact-content">
                     <div class="contact-img">
@@ -151,11 +151,39 @@
                     </div>
                     <div class="contact-description">
                         <p>There goes an "if you have any questions, do't hesitate to contact me" text and a ul of contact ways.</p>
-                        <button class="cv-btn btn">Get my CV!</button>
                         <ul class="contact-list">
-                            <li>here comes email</li>
-                            <li>here comes linkedin</li>
-                            <li>here comes github</li>
+                            <li>
+                                <button class="cv-btn btn">
+                                    <i class="fas fa-file-alt"></i>
+                                    <p>Get my CV</p>
+                                </button>
+                            </li>
+                            <li>
+                                <a href="mailto:s2000167@edu.bc.fi">
+                                    <button class="btn">
+                                        <i class="fas fa-envelope-open-text"></i>
+                                        <p>Send me an e-mail</p>
+                                    </button>
+                                </a> <!-- Used school email to keep the spam out of my official email address. Will be changed to a picture of my email address or some other thing bots can't read easily. -->
+                            </li>
+                            <li>
+                                <a href="https://fi.linkedin.com/in/beatakusnierz94/" target="_blank">
+                                    <button class="btn">
+                                        <i class="fab fa-linkedin"></i>
+                                        <p>Visit my LinkedIn</p>
+                                    </button>
+                                </a>
+                                
+                            </li>
+                            <li>
+                                <a href="https://github.com/bea94k" target="_blank">
+                                    <button class="btn">
+                                        <i class="fab fa-github-square"></i>
+                                        <p>Visit my GitHub</p>
+                                    </button>
+                                </a>
+                                
+                            </li>
                         </ul>
                     </div>
                 </div>

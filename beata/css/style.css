@@ -33,8 +33,10 @@ img {
 .btn {
     color: lightgrey;
     background-color: darkcyan;
-    padding: 1rem;
-    margin: 1rem;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
     min-width: 150px;
     border: 2px solid #007979;
     border-radius: 4px;
@@ -54,8 +56,9 @@ img {
 
 header {
     height: 10vh;
+    min-height: 50px;
     width: 100vw;
-    background: mediumaquamarine;
+    background: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -63,9 +66,14 @@ header {
     align-items: center;
 }
 
+nav {
+    display: inline-block;
+}
+
 nav ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100vw;
 }
 
@@ -76,6 +84,10 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.logo {
+    max-height: 90px;
 }
 
 /* MAIN */
@@ -93,10 +105,10 @@ main {
     background: black;
     display: flex;
     margin-top: 10vh; /* to avoid this element from hiding behind the fixed header and footer */
-    height: 90vh;
+    height: 91vh;
     margin-bottom: -100px; /* to push the scroll bar off the screen, 100px to be sure */
     padding-bottom: 100px;  /* to push the content back to its place */
-
+    scroll-behavior: smooth;
    
 } 
 
@@ -110,7 +122,7 @@ main {
 
 /* LANDING PAGE - SLIDER */
 
-.home {
+#home {
     background: lightcoral;
     display: flex;
     justify-content: space-around;
@@ -128,7 +140,7 @@ main {
 
 /* SKILLS */
 
-.skills {
+#skills {
     background: lightgreen;
 }
 
@@ -222,11 +234,11 @@ main {
 
 /* EDUCATION AND WORK EXPERIENCE */
 
-.education {
+#education {
     background: lightskyblue;
 }
 
-.experience {
+#experience {
     background: lightpink;
 }
 
@@ -245,7 +257,7 @@ main {
 
 /* CONTACT */
 
-.contact {
+#contact {
     background: peachpuff;
 }
 
@@ -263,7 +275,32 @@ main {
 
 .contact-list li {
     list-style-type: none;
-    margin: 2rem;
+}
+
+.contact-list li .btn {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 250px;
+}
+
+.contact-list li i {
+    font-size: 2rem;
+   /*  padding: 0 10px; */
+    flex: 1;
+}
+
+.contact-list li p {
+    flex: 4;
+}
+
+.contact-list li a {
+    text-decoration: none;
+}
+
+
+.cv-btn {
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -271,6 +308,7 @@ main {
 footer {
     height: 3vh;
     width: 100vw;
+    min-height: 1rem;
     background-color: maroon;
     font-size: 0.7rem;
     position: fixed;
