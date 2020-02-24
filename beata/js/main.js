@@ -1,5 +1,5 @@
 function sayHi() {
-    console.log('henlo der')
+  console.log("henlo der");
 }
 
 sayHi();
@@ -10,3 +10,8 @@ $('.cv-btn').click(function() {
   });
 
 
+$(".slider").slick({
+  dots: true,
+  wariableWidth: true,
+  wariableHeight: true
+});
