@@ -82,7 +82,7 @@ main {
   align-items: center;
 }
 
-/* LANDING PAGE - SLIDER */
+/* LANDING PAGE WITH SLIDER */
 
 .home {
   background: lightcoral;
@@ -97,6 +97,17 @@ main {
   background: orange;
   width: 300px;
   white-space: normal;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-track .slick-slide {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 /* SLIDER */
