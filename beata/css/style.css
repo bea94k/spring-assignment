@@ -1,216 +1,222 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    height: 100vh;
-    overflow-y: hidden; /* hiding scrolling up and down on the whole page, if visible */
+  height: 100vh;
+  overflow-y: hidden; /* hiding scrolling up and down on the whole page, if visible */
 }
 
 .hide-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 body {
-    height: 100%;
+  height: 100%;
 }
 
 img {
-    object-fit: cover;
-    max-height: 350px;
-    border-radius: 3px;
+  object-fit: cover;
+  max-height: 350px;
+  border-radius: 3px;
 }
 
 /* UTILITIES */
 
 .p {
-    padding: 2rem;
+  padding: 2rem;
 }
-
 
 /* HEADER */
 
 header {
-    height: 10vh;
-    width: 100vw;
-    background: mediumaquamarine;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
+  height: 10vh;
+  width: 100vw;
+  background: mediumaquamarine;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
 }
 
 nav ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 nav ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* MAIN */
 
-
-
 main {
-    
 }
 
 .scrolling-wrapper {
-    box-sizing: content-box;
-    overflow: auto;
-    white-space: nowrap;
-    background: black;
-    display: flex;
-    margin-top: 10vh; /* to avoid this element from hiding behind the fixed header and footer */
-    height: 90vh;
-    margin-bottom: -100px; /* to push the scroll bar off the screen, 100px to be sure */
-    padding-bottom: 100px;  /* to push the content back to its place */
-
-   
-} 
+  box-sizing: content-box;
+  overflow: auto;
+  white-space: nowrap;
+  background: black;
+  display: flex;
+  margin-top: 10vh; /* to avoid this element from hiding behind the fixed header and footer */
+  height: 90vh;
+  margin-bottom: -100px; /* to push the scroll bar off the screen, 100px to be sure */
+  padding-bottom: 100px; /* to push the content back to its place */
+}
 
 .container {
-    height: 100%;
-    min-width: 100vw; /* to have the sections full screen; doesnt seem to work with just width - flex fault? */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 100%;
+  min-width: 100vw; /* to have the sections full screen; doesnt seem to work with just width - flex fault? */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* LANDING PAGE - SLIDER */
 
 .home {
-    background: lightcoral;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    min-width: 100vw; /* to have the sections full screen; doesnt seem to work with just width - flex fault? */
+  background: lightcoral;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  min-width: 100vw; /* to have the sections full screen; doesnt seem to work with just width - flex fault? */
 }
 
 .slider-descriptions {
-    background: orange;
-    width: 300px;
-    white-space: normal;
+  background: orange;
+  width: 300px;
+  white-space: normal;
 }
 
+/* SLIDER */
+
+.slick-slider {
+  width: 50vw;
+  height: 70vh;
+  box-sizing: border-box;
+}
+
+.slider img {
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 3px;
+}
 
 /* SKILLS */
 
 .skills {
-    background: lightgreen;
+  background: lightgreen;
 }
 
 .skills-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 70vh;
-    width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70vh;
+  width: 90vw;
 }
 
 .skills-content h3 {
-    display: block;
-    height: 3rem;
-    width: 150px;
-    padding: 1rem;
-    background: rgb(252, 252, 113);
-    margin-right: 2rem;
+  display: block;
+  height: 3rem;
+  width: 150px;
+  padding: 1rem;
+  background: rgb(252, 252, 113);
+  margin-right: 2rem;
 }
 
 .ict,
 .lang {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .cards-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .skill-card {
-    display: block;
-    height: 150px;
-    width: 150px;
-    padding: 1rem;
-    background: rgb(252, 152, 113);
+  display: block;
+  height: 150px;
+  width: 150px;
+  padding: 1rem;
+  background: rgb(252, 152, 113);
 }
 
 /* EDUCATION AND WORK EXPERIENCE */
 
 .education {
-    background: lightskyblue;
+  background: lightskyblue;
 }
 
 .experience {
-    background: lightpink;
+  background: lightpink;
 }
 
 .edu-exp-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 .edu-exp-card {
-    flex: 1;
-    max-height: 95%;
-    background: gray;
-    margin: 1rem;
+  flex: 1;
+  max-height: 95%;
+  background: gray;
+  margin: 1rem;
 }
 
 /* CONTACT */
 
 .contact {
-    background: lightseagreen;
+  background: lightseagreen;
 }
 
 .contact-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
 .contact-description {
-    width: 50vw;
-    white-space: normal;
+  width: 50vw;
+  white-space: normal;
 }
 
 .contact-list li {
-    list-style-type: none;
-    margin: 2rem;
+  list-style-type: none;
+  margin: 2rem;
 }
 
 /* FOOTER */
 
 footer {
-    height: 5vh;
-    width: 100vw;
-    background-color: maroon;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100; /* to make sure it's over the space that pushed-off scrollbar leaves */
+  height: 5vh;
+  width: 100vw;
+  background-color: maroon;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* to make sure it's over the space that pushed-off scrollbar leaves */
 }
-
 
 /* @media screen and (max-width 750px) {
      check the proper width for it 

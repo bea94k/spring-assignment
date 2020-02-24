@@ -1,5 +1,11 @@
 function sayHi() {
-    console.log('henlo der')
+  console.log("henlo der");
 }
 
-sayHi()
+sayHi();
+
+$(".slider").slick({
+  dots: true,
+  wariableWidth: true,
+  wariableHeight: true
+});
