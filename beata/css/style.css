@@ -14,8 +14,8 @@ html {
 }
 
 body {
-    height: 100%;
-    font-family: 'Montserrat';
+  height: 100%;
+  font-family: "Montserrat";
 }
 
 img {
@@ -27,53 +27,53 @@ img {
 /* UTILITIES */
 
 .p {
-    padding: 2rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .btn {
-    color: lightgrey;
-    background-color: darkcyan;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    min-width: 150px;
-    border: 2px solid #007979;
-    border-radius: 4px;
+  color: lightgrey;
+  background-color: darkcyan;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  min-width: 150px;
+  border: 2px solid #007979;
+  border-radius: 4px;
 }
 
 .btn:hover {
-    background: #007979;
+  background: #007979;
 }
 
 .btn:active {
-    background: #006363;
-    border: 2px solid #006363;
+  background: #006363;
+  border: 2px solid #006363;
 }
 
 /* HEADER */
 
 header {
-    height: 10vh;
-    min-height: 50px;
-    width: 100vw;
-    background: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
+  height: 10vh;
+  min-height: 50px;
+  width: 100vw;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
 }
 
 nav {
-    display: inline-block;
+  display: inline-block;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
 }
 
 nav ul li {
@@ -86,7 +86,7 @@ nav ul li a {
 }
 
 .logo {
-    max-height: 90px;
+  max-height: 90px;
 }
 
 /* MAIN */
@@ -95,18 +95,17 @@ main {
 }
 
 .scrolling-wrapper {
-    box-sizing: content-box;
-    overflow: auto;
-    white-space: nowrap;
-    background: black;
-    display: flex;
-    margin-top: 10vh; /* to avoid this element from hiding behind the fixed header and footer */
-    height: 91vh;
-    margin-bottom: -100px; /* to push the scroll bar off the screen, 100px to be sure */
-    padding-bottom: 100px;  /* to push the content back to its place */
-    scroll-behavior: smooth;
-   
-} 
+  box-sizing: content-box;
+  overflow: auto;
+  white-space: nowrap;
+  background: black;
+  display: flex;
+  margin-top: 10vh; /* to avoid this element from hiding behind the fixed header and footer */
+  height: 91vh;
+  margin-bottom: -100px; /* to push the scroll bar off the screen, 100px to be sure */
+  padding-bottom: 100px; /* to push the content back to its place */
+  scroll-behavior: smooth;
+}
 
 .container {
   height: 100%;
@@ -119,12 +118,12 @@ main {
 /* LANDING PAGE WITH SLIDER */
 
 #home {
-    background: lightcoral;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    min-width: 100vw; /* to have the sections full screen; doesnt seem to work with just width - flex fault? */
+  background: lightcoral;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  min-width: 100vw; /* to have the sections full screen; doesnt seem to work with just width - flex fault? */
 }
 
 .slider-descriptions {
@@ -161,7 +160,7 @@ main {
 /* SKILLS */
 
 #skills {
-    background: lightgreen;
+  background: lightgreen;
 }
 
 .skills-content {
@@ -196,70 +195,90 @@ main {
 }
 
 .skill-card {
-    display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
-    height: 150px;
-    width: 150px;
-    padding: 1rem;
-    background: lightgrey;
+  display: flex;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  padding: 1rem;
+  background: green;
+  border-radius: 5px;
 }
 
 /* flags */
 .skill-card img {
-    max-height: 30px;
-    max-width: 60px;
+  max-height: 30px;
+  max-width: 60px;
 }
 
 /* IT icons */
 .skill-card i {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .fa-html5 {
-    color: #e34f26;
+  color: #e34f26;
 }
 
 .fa-css3-alt {
-    color: #2085c4;
+  color: #2085c4;
 }
 
 .fa-js {
-    color: #dac41e;
+  color: #dac41e;
 }
 
-
 .logo-name {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 70%;
-    width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+  width: 70%;
 }
 
 /* progress bars */
 .progress-bar-background {
-    background: #944d4d;
-    height: 90%;
-    width: 20px;
-    margin-right: 1rem;
-  }
-  
-  .progress-bar {
-    background: gray;
-    height: 15%; /* colors and percentage kinda in negative - if I want animation, i have to fix it better */
-    width: 20px;
-  }
+  background: #944d4d; /* colors and percentage of progress kinda in negative - if I want animation, i have to fix it better */
+  height: 90%;
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.progress-bar {
+  background: gray;
+  width: 20px;
+}
+
+.ict .skill-card:first-child .progress-bar {
+  height: 15%; /* HTML skill level */
+}
+
+.ict .skill-card:nth-child(2) .progress-bar {
+  height: 50%; /* CSS skill level */
+}
+
+.ict .skill-card:last-child .progress-bar {
+  height: 75%; /* JS skill level */
+}
+
+/* no Polish or English progress bars percentages, cause they are permanently at 100% */
+
+.lang .skill-card:nth-child(3) .progress-bar {
+  height: 65%; /* Finnish skill level */
+}
+
+.lang .skill-card:last-child .progress-bar {
+  height: 35%; /* Spanish skill level */
+}
 
 /* EDUCATION AND WORK EXPERIENCE */
 
 #education {
-    background: lightskyblue;
+  background: lightskyblue;
 }
 
 #experience {
-    background: lightpink;
+  background: lightpink;
 }
 
 .edu-exp-container {
@@ -271,14 +290,48 @@ main {
 .edu-exp-card {
   flex: 1;
   max-height: 95%;
+  max-width: 30%;
   background: gray;
   margin: 1rem;
+  padding: 1rem;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+
+.edu-exp-date {
+  flex: 1;
+}
+
+.edu-exp-img {
+  flex: 2;
+}
+
+.edu-exp-img img {
+  max-height: 75px;
+  width: 100%;
+}
+
+.edu-exp-place {
+  flex: 2;
+}
+
+.edu-exp-focus {
+  flex: 2;
+}
+
+.edu-exp-descr {
+  flex: 6;
+  font-size: 0.8rem;
+}
+
 
 /* CONTACT */
 
 #contact {
-    background: peachpuff;
+  background: peachpuff;
 }
 
 .contact-content {
@@ -294,49 +347,48 @@ main {
 }
 
 .contact-list li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .contact-list li .btn {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    width: 250px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 250px;
 }
 
 .contact-list li i {
-    font-size: 2rem;
-   /*  padding: 0 10px; */
-    flex: 1;
+  font-size: 2rem;
+  /*  padding: 0 10px; */
+  flex: 1;
 }
 
 .contact-list li p {
-    flex: 4;
+  flex: 4;
 }
 
 .contact-list li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
 .cv-btn {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* FOOTER */
 
 footer {
-    height: 3vh;
-    width: 100vw;
-    min-height: 1rem;
-    background-color: maroon;
-    font-size: 0.7rem;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100; /* to make sure it's over the space that pushed-off scrollbar leaves */
+  height: 3vh;
+  width: 100vw;
+  min-height: 1rem;
+  background-color: maroon;
+  font-size: 0.7rem;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* to make sure it's over the space that pushed-off scrollbar leaves */
 }
 
 /* @media screen and (max-width 750px) {
