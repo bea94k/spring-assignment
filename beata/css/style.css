@@ -133,12 +133,20 @@ nav ul li a:hover {
   max-height: 90px;
 }
 
-/* SPINNER OF FAKE LOADING */
+/* SPINNER OF FAKE LOADING & ANALYTICS DISCLAIMER*/
 
 .loader {
   position: absolute;
   top: 50%;
   left: 48%;
+}
+
+#disclaimer {
+  color: #6bac97;
+  width: 100%;
+  margin-left: -35%;
+  margin-top: 10%;
+  text-align: center;
 }
 
 .line {
@@ -188,7 +196,7 @@ nav ul li a:hover {
   background: black;
   display: flex;
   margin-top: 60px; /* to avoid this element from hiding behind the fixed header and footer */
-  height: 91vh;
+  height: 93vh;
   margin-bottom: -100px; /* to push the scroll bar off the screen, 100px to be sure */
   padding-bottom: 100px; /* to push the content back to its place */
   scroll-behavior: smooth;
@@ -402,7 +410,7 @@ nav ul li a:hover {
 
 .edu-exp-card {
   flex: 1;
-  max-height: 95%;
+  max-height: 65%;
   max-width: 30%;
   min-width: 300px;
   background: #cbf4d9;
@@ -422,16 +430,16 @@ nav ul li a:hover {
 }
 
 .edu-exp-img {
-  flex: 2;
+  flex: 4;
 }
 
 .edu-exp-img img {
-  max-height: 75px;
+  height: 160px;
   width: 300px;
 }
 
 .edu-exp-place {
-  flex: 2;
+  flex: 1;
 }
 
 .edu-exp-focus {
@@ -440,7 +448,7 @@ nav ul li a:hover {
 
 .edu-exp-descr {
   flex: 6;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /* CONTACT */

@@ -68,7 +68,7 @@ jQuery(document).ready(function() {
   /* FAKE LOADING OF THE PAGE */
   // add spinner to beginning of body of each html
   $("body").append(
-    '<div class="loader"><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div></div> <!-- "simple loader", a pen by Kevin on https://codepen.io/I-is-kevin/details/jqejXj -->'
+    '<div class="loader"><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div id="disclaimer">This site uses Google Analytics to improve the usability and ensure the best experience on the site. By continuing to use this site you accept the use of cookies.</div></div> <!-- "simple loader", a pen by Kevin on https://codepen.io/I-is-kevin/details/jqejXj -->'
   );
   $("body").css("background", "#212922");
 
@@ -166,8 +166,31 @@ jQuery(document).ready(function() {
     url:
       "http://api.openweathermap.org/data/2.5/weather?q=helsinki&units=metric&appid=5fa0b75646bc8623b0656789ee77d610"
   }).done(function(resp) {
-    console.log(resp);
     var curTemp = Math.round(resp.main.temp * 10) / 10;
     $(".temp").text(`Current temp in Helsinki, FI: ${curTemp} deg C`);
   });
+
+  //  EDUCATION AND EXPERIENCE CARDS ANIMATION ON HOVER
+  //  original state: pictures visible, description hidden
+
+  $(".edu-exp-descr").addClass("hide");
+
+  // after hovering: picture hidden, description visible
+
+  $("#high-school").mouseenter(expandCard);
+  $("#uni").mouseenter(expandCard);
+  $("#bch").mouseenter(expandCard);
+  $("#lionbridge").mouseenter(expandCard);
+  $("#nhl").mouseenter(expandCard);
+  $("#fafas").mouseenter(expandCard);
+
+  function expandCard() {
+    // this here refers to what was hovered on, so the specific card
+    var cardId = $(this).attr("id");
+    $(this).css("max-height", "95%");
+    $(`#${cardId} .edu-exp-img`).addClass("hide");
+    $(`#${cardId} .edu-exp-descr`).css("display", "block");
+  }
+
+  //  fadein/out
 });
