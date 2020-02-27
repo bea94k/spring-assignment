@@ -526,6 +526,11 @@ footer {
   z-index: 100; /* to make sure it's over the space that pushed-off scrollbar leaves */
 }
 
+.temp {
+  position: fixed;
+  right: 0.5rem;
+}
+
 /* @media screen and (max-width 750px) {
      check the proper width for it 
     html {

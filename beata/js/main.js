@@ -160,4 +160,14 @@ jQuery(document).ready(function() {
   }, 11500);
 
   /*  The single line animations probably could be done in a cleaner way, but couldn't figure it out for now, with so many of the parameters, classes and all changing case to case. */
+
+  // current temperature in Hesinki with Weather API in the footer, rounded up to 0.1
+  $.ajax({
+    url:
+      "http://api.openweathermap.org/data/2.5/weather?q=helsinki&units=metric&appid=5fa0b75646bc8623b0656789ee77d610"
+  }).done(function(resp) {
+    console.log(resp);
+    var curTemp = Math.round(resp.main.temp * 10) / 10;
+    $(".temp").text(`Current temp in Helsinki, FI: ${curTemp} deg C`);
+  });
 });
